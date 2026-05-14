@@ -1,0 +1,13 @@
+Foto de perfil
+==============
+
+Guarda tu retrato en la carpeta `public` con uno de estos nombres (el primero que exista se usa):
+
+1. foto-perfil.jpg   (recomendado)
+2. foto-perfil.jpeg
+3. foto-perfil.png
+4. foto-perfil.webp
+
+Después de guardar el archivo, recarga el portafolio (`npm run dev`) o vuelve a desplegar.
+
+La misma foto aparece en `cv.html` al imprimir a PDF.

@@ -1,0 +1,9 @@
+# Blueprint Render — sitio estático (Vite → dist)
+# https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: portfolio-fernanda
+    runtime: static
+    buildCommand: npm install && npm run build
+    staticPublishPath: ./dist
