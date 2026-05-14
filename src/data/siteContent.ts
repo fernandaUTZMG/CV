@@ -110,6 +110,22 @@ const cruzVerdeGallery: GallerySlide[] = cruzCaptions.map((caption, i) => ({
   caption,
 }))
 
+const M_SOLAINO = '/media/solaino'
+const solainoCaptions = [
+  'Inicio / panel administrador: módulos de inventario y bodega, solicitudes, archivos, nube, historial y usuarios; estado de conexión con Supabase.',
+  'Inventario: resumen por stock (sin stock, por terminarse, OK), alertas y búsqueda; datos centralizados en la nube para todos los equipos.',
+  'Listado de productos: tabla con medidas, ubicación, cantidades, costos y columna de miniaturas (IMG); acciones de historial, edición y baja.',
+  'Bodega — vista por proyecto (FLEX): órdenes de compra, descripciones, estados de avance y acceso a archivos y entregas.',
+  'Bodega — pestaña Orden: tiempos de taller, avance % y reglas de diseño vs programación; seguimiento de OC en curso.',
+  'Historial: auditoría de actividades en inventario y solicitudes; consulta por usuario y rol.',
+  'Usuarios: altas, roles (USER, ENCARGADO, ADMIN, etc.) y flujo de recuperación de contraseña.',
+] as const
+
+const solainoGallery: GallerySlide[] = solainoCaptions.map((caption, i) => ({
+  src: `${M_SOLAINO}/${i + 1}.png`,
+  caption,
+}))
+
 export const strings: Record<Locale, SiteStrings> = {
   es: {
     skipToContent: 'Saltar al contenido',
@@ -288,6 +304,10 @@ export const content: Record<Locale, SiteContent> = {
           'Tailwind CSS',
           'Axios',
         ],
+        confidentiality: 'private',
+        gallery: solainoGallery,
+        galleryClosing:
+          'Sistema interno en uso; las capturas son solo para contexto profesional. No compartas datos operativos sin autorización de la empresa.',
       },
       {
         id: 'alch',
@@ -424,6 +444,10 @@ export const content: Record<Locale, SiteContent> = {
           'Tailwind CSS',
           'Axios',
         ],
+        confidentiality: 'private',
+        gallery: solainoGallery,
+        galleryClosing:
+          'Internal system in use; screenshots are for professional context only. Do not share operational data without company approval.',
       },
       {
         id: 'alch',

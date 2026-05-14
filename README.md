@@ -95,7 +95,7 @@ Si no hay archivo, el sitio muestra un avatar con iniciales **FH** como respaldo
 
 ## Capturas de proyectos (carrusel)
 
-Añade los PNG en `public/media/alch/` (`1.png` … `12.png`) y `public/media/cruz-verde/` (`1.png` … `4.png`); detalle en `public/media/README.md`. Puedes copiar desde una carpeta local (por ejemplo `Downloads\cv\gobierno` y `Downloads\cv\cruz verde`) cuando actualices capturas.
+Añade los PNG en `public/media/alch/` (`1.png` … `12.png`), `public/media/cruz-verde/` (`1.png` … `4.png`) y **`public/media/solaino/`** (`1.png` … `7.png`); detalle en `public/media/README.md`.
 
 ## PDF del CV
 
