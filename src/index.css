@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'DM Sans', ui-sans-serif, system-ui, sans-serif;
+  /* Paleta propia: fondo cálido oscuro + acentos ámbar/coral (no cyan/violeta) */
+  --color-surface-0: #0c0a09;
+  --color-surface-1: #1c1917;
+  --color-surface-2: #292524;
+  --color-border: rgba(255, 255, 255, 0.09);
+  --color-muted: #a8a29e;
+  --color-fg: #e7e5e4;
+  --color-accent: #f59e0b;
+  --color-accent-2: #fb7185;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 min-h-svh bg-[var(--color-surface-0)] text-[var(--color-fg)] antialiased;
+    font-family: var(--font-sans);
+  }
+
+  ::selection {
+    @apply bg-amber-500/35 text-white;
+  }
+}

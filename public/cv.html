@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV — Fernanda Dessyre Hernández Alatorre</title>
+    <meta name="robots" content="noindex" />
+    <style>
+      :root {
+        --ink: #0b1220;
+        --muted: #3d4a63;
+        --line: #e6eaf2;
+        --accent: #b45309;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', system-ui, -apple-system, Roboto, Arial, sans-serif;
+        color: var(--ink);
+        line-height: 1.45;
+        background: #fff;
+      }
+      .wrap {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 28px 22px 40px;
+      }
+      .banner {
+        border: 1px solid #fcd34d;
+        background: #fffbeb;
+        color: #78350f;
+        padding: 12px 14px;
+        border-radius: 10px;
+        font-size: 13px;
+        margin-bottom: 18px;
+      }
+      h1 {
+        margin: 0 0 6px;
+        font-size: 28px;
+        letter-spacing: -0.02em;
+      }
+      .subtitle {
+        margin: 0 0 14px;
+        font-size: 15px;
+        color: var(--muted);
+        font-weight: 600;
+      }
+      .meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px 16px;
+        font-size: 13px;
+        color: var(--muted);
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 14px;
+        margin-bottom: 16px;
+      }
+      .meta a {
+        color: #b45309;
+        text-decoration: none;
+      }
+      .cv-top {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        margin-bottom: 4px;
+      }
+      .cv-photo-wrap {
+        flex: 0 0 auto;
+      }
+      .cv-photo {
+        display: block;
+        width: 112px;
+        height: 112px;
+        object-fit: cover;
+        object-position: center top;
+        border-radius: 14px;
+        border: 1px solid var(--line);
+        background: #f8fafc;
+      }
+      .cv-title-block {
+        flex: 1;
+        min-width: 0;
+      }
+      h2 {
+        margin: 22px 0 10px;
+        font-size: 13px;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+      }
+      p {
+        margin: 0 0 10px;
+        font-size: 13.5px;
+        color: #111827;
+      }
+      ul {
+        margin: 0 0 10px 18px;
+        padding: 0;
+      }
+      li {
+        margin: 6px 0;
+        font-size: 13.5px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px 22px;
+      }
+      @media (max-width: 760px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+      .pill {
+        display: inline-block;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 4px 10px;
+        margin: 4px 6px 0 0;
+        font-size: 12px;
+        color: #111827;
+        background: #fafafa;
+      }
+      @media print {
+        .banner {
+          display: none;
+        }
+        .wrap {
+          padding: 0;
+          max-width: none;
+        }
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="banner">
+        <strong>Guardar como PDF:</strong> en el navegador usa <em>Imprimir</em> (Ctrl+P) y elige
+        <strong>Guardar como PDF</strong> como destino.
+      </div>
+
+      <header>
+        <div class="cv-top">
+          <div class="cv-photo-wrap" id="cv-photo-wrap">
+            <img
+              id="cv-profile-photo"
+              class="cv-photo"
+              alt="Fernanda Dessyre Hernández Alatorre"
+              width="112"
+              height="112"
+            />
+          </div>
+          <div class="cv-title-block">
+            <h1>Fernanda Dessyre Hernández Alatorre</h1>
+            <p class="subtitle">Ingeniera en Desarrollo y Gestión de Software</p>
+          </div>
+        </div>
+        <div class="meta">
+          <span>Guadalajara, Jalisco, México</span>
+          <a href="mailto:fernanda.hernandez.22s@utzmg.edu.mx">fernanda.hernandez.22s@utzmg.edu.mx</a>
+          <a href="mailto:dessyre21@hotmail.com">dessyre21@hotmail.com</a>
+          <a href="https://github.com/fernandaUTZMG" target="_blank" rel="noreferrer">github.com/fernandaUTZMG</a>
+          <a href="https://wa.me/523325681542" target="_blank" rel="noreferrer">WhatsApp +52 332 568 1542</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Perfil</h2>
+        <p>
+          Ingeniera en Desarrollo y Gestión de Software con cerca de 2 años de experiencia profesional.
+          Apasionada por la tecnología y los retos; orientada a resultados en equipos colaborativos.
+          Experiencia en sistemas gubernamentales y soluciones empresariales (inventario/almacén),
+          cubriendo frontend, backend, bases de datos, documentación y despliegue.
+        </p>
+      </section>
+
+      <section>
+        <h2>Experiencia</h2>
+
+        <p><strong>Solaino Soluciones Integrales</strong> — Software y manufactura · <em>2025 — presente</em></p>
+        <ul>
+          <li>
+            Desarrollo full stack de sistemas internos de inventario, bodega y producción: roles, alertas de stock,
+            entradas/salidas con control por serie y FIFO, solicitudes, auditoría y seguimiento de OC/proyectos
+            (Supabase/PostgreSQL).
+          </li>
+          <li>
+            Apoyo en piso de manufactura: programación CNC en Autodesk Fusion, maquinado de fixtures, y armado,
+            detallado y retrabajo de piezas.
+          </li>
+          <li>Stack: React, Vite, TypeScript/JavaScript, Node.js/PHP, PostgreSQL, Supabase, Tailwind CSS, Fusion, CNC.</li>
+        </ul>
+
+        <p>
+          <strong>H. Ayuntamiento de San Pedro Tlaquepaque — Obras Públicas</strong> — Desarrollo de software ·
+          <em>2024 — 2026</em>
+        </p>
+        <ul>
+          <li>
+            Desarrollo colaborativo de un sistema gubernamental en producción para registros de obras públicas,
+            sustituyendo sistema legado y migrando datos a PostgreSQL.
+          </li>
+          <li>Nuevos módulos, automatización, opciones de administración y mejoras de accesibilidad.</li>
+          <li>
+            Stack: React, Vite, JavaScript, Node.js, NestJS, PostgreSQL, Tailwind CSS, Axios, GitHub y GitLab.
+          </li>
+          <li>Documentación semanal; entrega de Manual Técnico y Manual de Usuario.</li>
+        </ul>
+
+        <p>
+          <strong>H. Ayuntamiento de Tlajomulco de Zúñiga — Cruz Verde</strong> — Desarrollo de software ·
+          <em>2025</em>
+        </p>
+        <ul>
+          <li>
+            Aplicación móvil (Expo) para paramédicos: registro de insumos y equipamiento de ambulancias, con
+            exportación a PDF y evidencia fotográfica cuando aplica.
+          </li>
+          <li>Sistema web para administración y consolidación de información.</li>
+          <li>Base de datos PostgreSQL; frontend y backend; documentación semanal de avances.</li>
+          <li>Stack: React, JavaScript, TypeScript, HTML, CSS, Expo, Express.</li>
+        </ul>
+
+        <p><strong>MARVELSAA</strong> — Prácticas / apoyo en informática · <em>2023 (~5 meses)</em></p>
+        <ul>
+          <li>Soporte a usuarios, asignación de equipos y tareas operativas en plataformas internas.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Formación</h2>
+        <p>
+          <strong>Licenciatura terminada</strong> — Ingeniería en Desarrollo y Gestión de Software · UTZMG
+          (Guadalajara, Jalisco).
+        </p>
+        <p>
+          <strong>TSU en Desarrollo y Gestión de Software</strong> · UTZMG — <em>septiembre 2022 — abril 2024</em>
+        </p>
+        <ul>
+          <li>Desarrollo de aplicación web para asesorías en la universidad.</li>
+          <li>Desarrollo de aplicación móvil para estacionamiento inteligente.</li>
+          <li>Desarrollo de aplicación web para administradores de estacionamiento inteligente.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Competencias técnicas</h2>
+        <p>
+          <span class="pill">React</span>
+          <span class="pill">Vite</span>
+          <span class="pill">JavaScript</span>
+          <span class="pill">TypeScript</span>
+          <span class="pill">Node.js</span>
+          <span class="pill">NestJS</span>
+          <span class="pill">Express</span>
+          <span class="pill">PHP</span>
+          <span class="pill">HTML</span>
+          <span class="pill">CSS</span>
+          <span class="pill">Tailwind CSS</span>
+          <span class="pill">PostgreSQL</span>
+          <span class="pill">Supabase</span>
+          <span class="pill">Axios</span>
+          <span class="pill">Expo</span>
+          <span class="pill">GitHub</span>
+          <span class="pill">GitLab</span>
+          <span class="pill">C++</span>
+          <span class="pill">Autodesk Fusion</span>
+          <span class="pill">CNC</span>
+        </p>
+      </section>
+
+      <section>
+        <h2>Competencias de ingeniería</h2>
+        <div class="grid">
+          <ul>
+            <li>Administración de bases de datos</li>
+            <li>Implementación de software</li>
+            <li>Depuración y pruebas</li>
+            <li>Solución de problemas de software</li>
+          </ul>
+          <ul>
+            <li>Desarrollo de software</li>
+            <li>Arquitectura de sistemas y de software</li>
+            <li>Programación en pareja</li>
+          </ul>
+        </div>
+      </section>
+
+      <section>
+        <h2>Habilidades personales</h2>
+        <ul>
+          <li>Trabajo en equipo, comunicación clara y organización.</li>
+          <li>Aprendizaje rápido, cumplimiento de entregables y actitud proactiva.</li>
+          <li>Manejo de conflictos y enfoque en soluciones.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Disponibilidad</h2>
+        <p>Viaje: depende de la oportunidad. Industria de interés: desarrollo de software.</p>
+      </section>
+    </div>
+    <script>
+      ;(function () {
+        var paths = ['/foto-perfil.jpg', '/foto-perfil.jpeg', '/foto-perfil.png', '/foto-perfil.webp']
+        var img = document.getElementById('cv-profile-photo')
+        var wrap = document.getElementById('cv-photo-wrap')
+        if (!img || !wrap) return
+        var i = 0
+        img.onerror = function () {
+          i += 1
+          if (i >= paths.length) {
+            wrap.style.display = 'none'
+            return
+          }
+          img.src = paths[i]
+        }
+        img.src = paths[0]
+      })()
+    </script>
+  </body>
+</html>
